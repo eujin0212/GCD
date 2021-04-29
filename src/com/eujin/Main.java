@@ -13,18 +13,19 @@ public class Main {
         return gcd(b%a, a);
     }
 
-    public static int gcdFormula(int a, int b)
+    public static void gcdFormula(int a, int b)
     {
         if (a>b){
-            if (b == 0)
-                return b;
-            System.out.println(a + "=" + a/b + "(" + b + ")" + "+" + (a-((a/b)*b)));
-            return gcdFormula(b%a, (a-((a/b)*b)));
+            if (b == 0){
+
+            }else{
+                System.out.println(a + "=" + a/b + "(" + b + ")" + "+" + (a-((a/b)*b)));
+                gcdFormula(b%a, (a-((a/b)*b)));
+            }
+
         }else{
-            if (b == 0)
-                return b;
-            System.out.println(a + "=" + a/b + "(" + b + ")" + "+" + b);
-            return gcdFormula(b, a);
+            System.out.println(a + "=" + a/b + "(" + b + ")" + "+" + a);
+            gcdFormula(b, a);
         }
     }
 
@@ -37,7 +38,7 @@ public class Main {
         int g, f;
 
         g = gcd(x, y);
-        f = gcdFormula(x, y);
+        gcdFormula(x, y);
         System.out.println("GCD(" + x + " , " + y+ ") = " + g);
     }
 
