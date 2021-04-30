@@ -58,6 +58,7 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String a,b;
+                textArea.setText("");
                 a = xText.getText();
                 b = yText.getText();
                 x = Integer.parseInt(a);
