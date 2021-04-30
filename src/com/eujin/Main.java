@@ -141,13 +141,11 @@ public class Main {
             if (b == 0){
 
             }else{
-                //System.out.println(a + "=" + a/b + "(" + b + ")" + "+" + (a-((a/b)*b)));
                 textArea.append(a + "=" + a/b + "(" + b + ")" + "+" + (a-((a/b)*b))+"\n");
                 gcdFormula(b%a, (a-((a/b)*b)));
             }
 
         }else{
-            //System.out.println(a + "=" + a/b + "(" + b + ")" + "+" + a);
             textArea.append(a + "=" + a/b + "(" + b + ")" + "+" + a +"\n");
             gcdFormula(b, a);
         }
