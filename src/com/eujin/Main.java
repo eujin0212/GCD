@@ -104,8 +104,6 @@ public class Main {
         textArea.setOpaque(false);
         textArea.setEditable(false);
         textArea.setMargin( new Insets(5,10,5,10) );
-//        Font font = new Font(textArea.getFont().getName(),Font.BOLD,textArea.getFont().getSize());
-//        textArea.setFont(font);
         scrollPane = new JScrollPane (textArea);
         scrollPane.setPreferredSize(new Dimension(400,135));
         textAreaBorder = new TitledBorder("Calculation Steps");
